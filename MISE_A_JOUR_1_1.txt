@@ -1,0 +1,20 @@
+MISE A JOUR 1.1 - SUIVI DES TUTEES
+
+Nouveautes :
+- Signature Jérémy Esposito, Tutor, visible dans toute l application et les rapports.
+- Logo officiel du Collège Alpin Beau Soleil intégré dans l interface.
+- Nouvel écran de démarrage avec accès rapide aux entretiens, tutees et tableau de bord.
+- Nouvelle icône iPhone / PWA.
+- Version 1.1 visible dans Réglages.
+
+Mise a jour GitHub Pages :
+1. Ouvrir le depot suivi-tutees.
+2. Add file > Upload files.
+3. Glisser TOUS les fichiers de ce dossier.
+4. Remplacer les fichiers existants si GitHub le demande, puis Commit changes.
+5. Attendre environ 1 minute.
+6. Sur iPhone, fermer completement l app puis la rouvrir.
+
+Pour la nouvelle icone iPhone, iOS peut conserver l ancienne icone. Si necessaire, supprimer seulement l icone de l ecran d accueil, rouvrir le site dans Safari et utiliser Ajouter a l ecran d accueil.
+
+Les donnees locales existantes sont conservees, car la cle de stockage de l application n a pas ete modifiee.
