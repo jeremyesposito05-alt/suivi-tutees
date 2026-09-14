@@ -1,0 +1,33 @@
+SUIVI DES TUTEES 1/1 - VERSION PWA IPHONE
+
+Ce dossier est prêt pour un hébergement statique HTTPS gratuit, par exemple GitHub Pages ou Cloudflare Pages.
+
+Fichiers à publier ensemble :
+- index.html
+- manifest.webmanifest
+- sw.js
+- icon-192.png
+- icon-512.png
+- apple-touch-icon.png
+- .nojekyll
+
+Installation sur iPhone :
+1. Publier ce dossier sur un hébergement HTTPS.
+2. Ouvrir le lien dans Safari sur l’iPhone.
+3. Toucher Partager.
+4. Choisir Sur l’écran d’accueil.
+5. Activer Ouvrir comme app web si l’option apparaît.
+6. Toucher Ajouter.
+
+Données :
+- Les données des élèves sont enregistrées localement dans le stockage du navigateur de l’application sur l’appareil.
+- Le serveur héberge uniquement les fichiers de l’application.
+- Le bouton Sauvegarder crée en plus jusqu’à 5 copies locales de sécurité.
+- Le bouton Exporter génère un fichier JSON que vous pouvez enregistrer dans iCloud Drive ou Fichiers.
+- Le bouton Importer permet de restaurer ce fichier.
+
+Partage :
+- Copier le rapport copie le texte dans le presse-papiers.
+- Partager ouvre la feuille de partage iOS lorsque disponible.
+
+Important : ouvrir index.html directement depuis l’app Fichiers ne suffit pas pour les fonctions PWA. Il faut l’héberger en HTTPS pour l’installation et le mode hors connexion.

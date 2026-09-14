@@ -1,0 +1,16 @@
+DEPLOIEMENT GRATUIT CONSEILLE
+
+Option simple : GitHub Pages
+
+1. Créez un dépôt GitHub vide, par exemple suivi-tutees.
+2. Ajoutez tous les fichiers de ce dossier à la racine du dépôt.
+3. Dans GitHub, ouvrez Settings > Pages.
+4. Dans Build and deployment, choisissez Deploy from a branch.
+5. Sélectionnez la branche main et le dossier /root, puis Save.
+6. GitHub fournit ensuite une adresse HTTPS du type https://votre-compte.github.io/suivi-tutees/
+7. Ouvrez cette adresse dans Safari sur l’iPhone.
+8. Touchez Partager > Sur l’écran d’accueil > Ajouter.
+
+Les fichiers publiés ne contiennent aucune donnée d’élève. Les élèves, questionnaires et notes sont ajoutés après ouverture et restent stockés localement sur l’appareil.
+
+Sauvegarde conseillée : utilisez régulièrement Exporter vers Fichiers et conservez le fichier JSON dans iCloud Drive.
