@@ -1,0 +1,17 @@
+MISE A JOUR 1.3 - SUIVI DES TUTEES
+
+Navigation et fiche eleve :
+- Un clic sur un eleve depuis le Dashboard ouvre maintenant sa fiche dediee.
+- Les alertes du Dashboard ouvrent aussi directement la fiche de l eleve concerne.
+- La fiche regroupe informations, matieres, Afternoon Activities, indicateurs, questionnaires et historique des 1/1.
+- Les questionnaires peuvent etre consultes, relances sous forme d un nouveau questionnaire et supprimes depuis cette fiche.
+- La suppression conserve les notes d entretien et recalcule les indicateurs.
+- Le questionnaire eleve s ouvre dans l application et le bouton Retour ramene a la page precedente, sans saut vers le Dashboard.
+
+Stabilite :
+- La vue courante et l eleve courant sont memorises pendant la session.
+- Un rafraichissement de page ne doit plus renvoyer automatiquement au Dashboard.
+- L ecran d accueil ne reapparait pas au milieu d une meme session.
+- Le service worker utilise maintenant la version 1.3 et privilegie la version web la plus recente pour la page principale.
+
+Les donnees existantes sont conservees. La cle de stockage n a pas ete modifiee.
