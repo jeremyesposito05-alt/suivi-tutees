@@ -1,0 +1,18 @@
+MISE A JOUR 1.2 - SUIVI DES TUTEES
+
+Nouveautes :
+- Le nom du tuteur est configurable dans Reglages.
+- Le nom du tuteur apparait dans l application et dans les rapports.
+- Signature de creation discrete : By M. Esposito.
+- Un questionnaire enregistre peut etre supprime depuis l historique.
+- La suppression demande confirmation et conserve les notes d entretien.
+- Cache PWA mis a jour vers la version 1.2.
+
+Pour mettre a jour GitHub Pages :
+1. Add file > Upload files dans le depot suivi-tutees.
+2. Glisser tous les fichiers de ce dossier.
+3. Commit changes.
+4. Attendre 1 a 3 minutes.
+5. Fermer completement l application iPhone puis la rouvrir.
+
+Les donnees locales existantes restent conservees.
