@@ -1,0 +1,15 @@
+MISE A JOUR 1.5.1 - CORRECTION QUESTIONNAIRE ELEVE
+
+Correction principale :
+- Le bouton Questionnaire eleve depuis Tutees ne doit plus flasher puis revenir au menu.
+- Ouverture du questionnaire protegee contre les doubles clics / clics fantomes sur mobile.
+- Le bouton Retour professeur est bloque pendant 550 ms a l'ouverture afin d'eviter un retour immediat involontaire.
+- Les boutons de navigation du questionnaire sont explicitement de type button.
+- Depuis Tutees, le retour du questionnaire revient dans Tutees.
+- Depuis la fiche eleve, le retour revient sur la fiche eleve.
+- Depuis Entretien 1/1, le retour revient dans Entretien 1/1.
+- L'ecran d'accueil est force en arriere-plan lors de l'ouverture du questionnaire.
+
+Donnees :
+- Aucune cle de stockage n'a change.
+- Les eleves, questionnaires, notes, AA par Term et recompenses/sanctions existants sont conserves.

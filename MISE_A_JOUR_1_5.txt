@@ -1,0 +1,24 @@
+MISE A JOUR 1.5 - SUIVI DES TUTEES
+
+Nouveautes :
+- Dans chaque fiche eleve, ajout d un bloc « Recompenses academiques, colles et sanctions ».
+- Trois types d entree : Recompense academique, Colle, Sanction.
+- Chaque entree contient une date et un commentaire libre.
+- Le commentaire accepte directement le copier-coller depuis un portail, un e-mail ou Teams.
+- Bouton pour copier le commentaire d une entree.
+- Bouton pour supprimer une entree avec confirmation.
+- Les donnees sont conservees dans la fiche de l eleve et incluses dans les sauvegardes JSON.
+- Correction d une declaration JavaScript dupliquee detectee dans la version 1.4.
+- Cache PWA passe en version 1.5 pour forcer la mise a jour.
+
+Compatibilite :
+- La cle de stockage locale reste inchangee.
+- Les eleves, questionnaires, notes et Afternoon Activities existants sont conserves.
+- Les fiches existantes recoivent automatiquement une liste vide de recompenses / sanctions.
+
+Mise a jour GitHub Pages :
+1. Ouvrir le depot suivi-tutees.
+2. Add file > Upload files.
+3. Glisser tous les fichiers de ce dossier.
+4. Commit changes.
+5. Attendre le nouveau deploiement GitHub Pages.
