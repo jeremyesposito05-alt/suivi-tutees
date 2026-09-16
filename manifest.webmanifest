@@ -1,7 +1,7 @@
 {
   "name": "Suivi des tutees 1/1 · Beau Soleil",
   "short_name": "Suivi Tutees",
-  "description": "Application de suivi des entretiens individuels 1/1 au Collège Alpin Beau Soleil.",
+  "description": "Suivi des entretiens individuels 1/1 par Jérémy Esposito, Tutor au Collège Alpin Beau Soleil.",
   "lang": "fr",
   "start_url": "./index.html",
   "scope": "./",
