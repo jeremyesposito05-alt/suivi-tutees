@@ -1,0 +1,20 @@
+SUIVI DES TUTEES - VERSION 1.6.1 SIMPLIFIEE
+21 septembre 2026
+
+Objectif : réduire le nombre de menus et de saisies.
+
+NOUVEAUTES
+- Note du tuteur FR / EN mise en avant sur la fiche élève.
+- Actions en cours dans un seul bloc, avec cible Élève / Parents / House / École.
+- Le Fil de l'élève fusionne automatiquement : questionnaires, entretiens 1/1, rewards, colles et sanctions.
+- Seules les informations externes (Parent, House, professeur, activité, autre) doivent être ajoutées manuellement au Fil.
+- La saisie des rewards / colles / sanctions reste rapide et alimente automatiquement le Fil.
+- Outlook / Power Automate n'apparaît plus dans l'interface et est mis de côté.
+
+COMPATIBILITE
+- Même clé de stockage locale que la version 1.5.1.
+- Les profils, questionnaires, notes 1/1, matières, AA et éléments académiques existants sont conservés.
+- Les éventuels anciens points d'attention du prototype 1.6 sont convertis en actions sans suppression des données sources.
+
+SECURITE
+Avant toute mise à jour importante, utiliser « Exporter les données » pour conserver une sauvegarde JSON.

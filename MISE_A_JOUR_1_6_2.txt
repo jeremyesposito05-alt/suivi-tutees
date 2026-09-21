@@ -1,0 +1,22 @@
+Suivi des tutees - Mise a jour 1.6.2
+21 septembre 2026
+
+Objectif : rendre la fiche eleve beaucoup plus rapide a lire et a utiliser.
+
+Nouveautes :
+- fiche de pilotage compacte en haut du profil ;
+- bien-etre, stress et fatigue avec emojis ;
+- difficulte academique du dernier questionnaire ;
+- date du dernier questionnaire ;
+- action prioritaire directement visible ;
+- deux actions principales : Ajouter un commentaire / Ajouter une action ;
+- Ajouter un commentaire gere aussi Reward, Colle et Sanction et classe automatiquement l'information ;
+- historique, actions, rewards/sanctions, informations scolaires et questionnaires replies par defaut ;
+- suppression de la Note du tuteur comme champ distinct pour eviter les doubles saisies ;
+- migration automatique des anciennes Notes du tuteur vers le Fil, sans perte de donnees ;
+- le Fil continue d'integrer automatiquement questionnaires, 1/1 et elements academiques ;
+- aucune connexion Outlook ou Microsoft activee.
+
+Compatibilite :
+- meme cle de stockage locale que les versions precedentes ;
+- les donnees existantes ne sont pas reinitialisees.
