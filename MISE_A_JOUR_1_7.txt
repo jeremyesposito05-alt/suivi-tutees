@@ -1,0 +1,12 @@
+MISE A JOUR 1.7 - INTERFACE SIMPLIFIEE
+
+- Le Tableau de bord devient l ecran principal unique.
+- Suppression visuelle des menus Mes tutees et Entretiens.
+- Les entretiens 1/1 restent accessibles depuis la fiche de chaque eleve.
+- Reglages accessibles par une icone engrenage.
+- Suppression des doublons: alertes separees, compteur fixe du nombre de tutees, bouton Ouvrir le profil.
+- Dashboard recentre sur trois indicateurs: questionnaires a faire, points a surveiller, actions ouvertes.
+- Chaque ligne eleve affiche directement etat, difficulte, questionnaire et actions.
+- Gestion des tutees deplacee dans les Reglages.
+- Aucune donnee existante n est supprimee.
+- Cache PWA passe a v1.7.

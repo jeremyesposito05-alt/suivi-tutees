@@ -1,0 +1,9 @@
+MISE A JOUR 1.7.1
+
+- Retour d’une identité visuelle Beau Soleil forte avec en-tête bleu foncé officiel.
+- Le Dashboard commence désormais par Mes tutees.
+- La section Choses à faire vient ensuite.
+- Chaque carte élève affiche : nom, classe, maison, alertes, choses à faire et indice global de bien-être de la semaine.
+- L’indice hebdomadaire combine bien-être, stress inversé, fatigue inversée, boarding, AA et organisation scolaire.
+- Les données existantes utilisent toujours la même clé locale et sont conservées.
+- Cache PWA mis à jour en 1.7.1.
