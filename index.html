@@ -169,7 +169,7 @@ main{max-width:1180px;width:100%;margin:0 auto;padding:0 24px 70px}
       <button class="primary" id="welcomeStudents">Mes tutees</button>
     </div>
     <div class="welcome-lang"><button data-welcome-lang="fr">FR</button><button data-welcome-lang="en">EN</button></div>
-    <div class="welcome-version">Version 1.8</div><div class="creator-mark">By M. Esposito</div>
+    <div class="welcome-version">Version 1.8.1</div><div class="creator-mark">By M. Esposito</div>
   </div>
 </div>
 
@@ -460,8 +460,8 @@ function setCurrentTerm(t){t=String(t);if(!['1','2','3'].includes(t))return;ensu
 
 
 const BRANDING_TXT={
-fr:{title:'Suivi des tutees',sub:'Entretiens individuels 1/1',start:'Démarrer un entretien',students:'Mes tutees',dashboard:'Tableau de bord',version:'Suivi des tutees · v1.8 · 21 septembre 2026'},
-en:{title:'Tutee Follow-up',sub:'Individual 1:1 meetings',start:'Start a meeting',students:'My tutees',dashboard:'Dashboard',version:'Tutee Follow-up · v1.8 · 21 September 2026'}
+fr:{title:'Suivi des tutees',sub:'Entretiens individuels 1/1',start:'Démarrer un entretien',students:'Mes tutees',dashboard:'Tableau de bord',version:'Suivi des tutees · v1.8.1 · 21 septembre 2026'},
+en:{title:'Tutee Follow-up',sub:'Individual 1:1 meetings',start:'Start a meeting',students:'My tutees',dashboard:'Dashboard',version:'Tutee Follow-up · v1.8.1 · 21 September 2026'}
 };
 function brandingTr(k){const d=BRANDING_TXT[lang()]||BRANDING_TXT.fr;return d[k]||k}
 function refreshIdentityUi(){qsa('.tutor-name').forEach(e=>e.textContent=tutorName())}
@@ -473,6 +473,54 @@ function refreshBrandingUi(){
 }
 function closeWelcome(view){const w=qs('#welcomeScreen');if(w)w.classList.add('hidden');sessionStorage.setItem(SESSION_WELCOME_KEY,'1');if(view)showView(view)}
 
+
+
+
+// iPhone swipe back v1.8.1
+let swipeStartX=null,swipeStartY=null,swipeStartTime=0,swipeStartTarget=null;
+function swipeBackBlocked(target){
+  if(!target)return false;
+  return Boolean(target.closest('input,textarea,select,button,[contenteditable="true"],.modal-backdrop.show,.student-mode:not(.hidden),.choice-grid,.segmented'));
+}
+function showWelcomeFromApp(){
+  qsa('.modal-backdrop.show').forEach(m=>m.classList.remove('show'));
+  const w=qs('#welcomeScreen');if(w)w.classList.remove('hidden');
+  sessionStorage.removeItem(SESSION_WELCOME_KEY);
+  window.scrollTo({top:0,behavior:'auto'});
+}
+function appBackFromGesture(){
+  if(!qs('#studentMode')?.classList.contains('hidden'))return;
+  const openModal=qsa('.modal-backdrop.show').pop();if(openModal){openModal.classList.remove('show');return}
+  const view=activeViewId();
+  if(view==='interviews'){
+    if(activeStudentId&&student(activeStudentId))openStudentProfile(activeStudentId);
+    else showView('dashboard');
+    return;
+  }
+  if(view==='studentDetail'){backFromStudentProfile();return}
+  if(view==='settings'||view==='students'){showView('dashboard');return}
+  if(view==='dashboard'){showWelcomeFromApp();return}
+  showView('dashboard');
+}
+function installSwipeBack(){
+  const root=document;
+  root.addEventListener('touchstart',e=>{
+    if(e.touches.length!==1)return;
+    swipeStartTarget=e.target;
+    if(swipeBackBlocked(swipeStartTarget)){swipeStartX=null;return}
+    swipeStartX=e.touches[0].clientX;swipeStartY=e.touches[0].clientY;swipeStartTime=Date.now();
+  },{passive:true});
+  root.addEventListener('touchend',e=>{
+    if(swipeStartX==null||!e.changedTouches?.length)return;
+    const dx=e.changedTouches[0].clientX-swipeStartX,dy=e.changedTouches[0].clientY-swipeStartY,dt=Date.now()-swipeStartTime;
+    swipeStartX=null;
+    if(dt>800)return;
+    if(dx>-90)return;
+    if(Math.abs(dy)>70)return;
+    if(Math.abs(dx)<Math.abs(dy)*1.35)return;
+    appBackFromGesture();
+  },{passive:true});
+}
 
 
 // Editable manual entries v1.8
@@ -633,7 +681,7 @@ qs('#saveNowTop').onclick=saveNow;qs('#addStudentTop').onclick=addStudent;qs('#a
 qs('#welcomeStudents').onclick=()=>closeWelcome('dashboard');
 qsa('[data-welcome-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.welcomeLang)));
 window.addEventListener('storage',()=>{load();const sid=sessionStorage.getItem(SESSION_STUDENT_KEY);if(sid&&student(sid))activeStudentId=sid;renderAll()});window.addEventListener('message',e=>{if(e.data?.type==='tutee-response-saved'){load();rememberStudent(e.data.studentId||activeStudentId);selectedResponseId=e.data.responseId||null;renderAll()}});
-load();const rememberedStudent=sessionStorage.getItem(SESSION_STUDENT_KEY);if(rememberedStudent&&student(rememberedStudent))activeStudentId=rememberedStudent;applyStaticText();refreshBrandingUi();qs('#welcomeScreen')?.classList.remove('hidden');sessionStorage.removeItem(SESSION_WELCOME_KEY);const rememberedView=sessionStorage.getItem(SESSION_VIEW_KEY);if(rememberedView==='studentDetail'&&activeStudentId&&student(activeStudentId)){showView('studentDetail',false)}else{showView('dashboard',false)}registerPwa();refreshPwaUi();if(location.hash.startsWith('#student=')){const id=decodeURIComponent(location.hash.slice(9));if(student(id)){rememberStudent(id);studentLanguage=lang();openStudentMode(id,false,'studentDetail')}}
+load();const rememberedStudent=sessionStorage.getItem(SESSION_STUDENT_KEY);if(rememberedStudent&&student(rememberedStudent))activeStudentId=rememberedStudent;applyStaticText();refreshBrandingUi();qs('#welcomeScreen')?.classList.remove('hidden');sessionStorage.removeItem(SESSION_WELCOME_KEY);const rememberedView=sessionStorage.getItem(SESSION_VIEW_KEY);if(rememberedView==='studentDetail'&&activeStudentId&&student(activeStudentId)){showView('studentDetail',false)}else{showView('dashboard',false)}installSwipeBack();registerPwa();refreshPwaUi();if(location.hash.startsWith('#student=')){const id=decodeURIComponent(location.hash.slice(9));if(student(id)){rememberStudent(id);studentLanguage=lang();openStudentMode(id,false,'studentDetail')}}
 </script>
 </body>
 </html>
