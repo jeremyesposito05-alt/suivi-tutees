@@ -1,0 +1,10 @@
+MISE A JOUR 2.3 — réponse Teams plus simple à récupérer (28 septembre 2026)
+
+- Plus besoin de sélectionner le code : dans Teams, appui long sur le message de l'élève › Copier
+  (le message entier), puis « Coller une réponse Teams » dans l'app.
+- L'app lit le presse-papiers et importe aussitôt, sans toucher « Importer »
+  (l'iPhone peut demander d'autoriser le collage : touche « Coller »).
+- Le message de l'élève rappelle au tuteur comment faire.
+- Nouveau code TQ2, 25 % plus court, sans « _ » (Teams peut le transformer en italique
+  et abîmer le code) ; les anciens codes TQ1 restent acceptés.
+- Cache PWA mis à jour en 2.3.
