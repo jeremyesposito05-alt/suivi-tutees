@@ -1,0 +1,11 @@
+MISE A JOUR 2.1 — vérification avant l'envoi du questionnaire (28 septembre 2026)
+
+- Avant : toucher « Envoyer » sans avoir tout rempli ne faisait rien, sans explication
+  (le navigateur bloquait l'envoi sans pouvoir afficher son avertissement).
+- S'il manque une des 6 échelles (bien-être, fatigue, stress, boarding, activités, organisation),
+  un message explique lesquelles ; « Compléter » amène à la première et les surligne en orange.
+  Ces 6 réponses restent obligatoires : sans elles, les alertes du tuteur seraient fausses.
+- Sinon, une confirmation s'affiche toujours avant l'envoi et liste ce qui n'est pas rempli
+  (matières, besoins, textes libres), avec « Compléter » ou « Envoyer quand même ».
+- En français et en anglais, sur l'iPhone du tuteur comme par le lien Teams.
+- Cache PWA mis à jour en 2.1.
