@@ -1,0 +1,19 @@
+MISE A JOUR 2.0 — questionnaire par Teams et sauvegarde dans le cloud (28 septembre 2026)
+
+Questionnaire envoyé par Teams
+- Fiche élève > « Envoyer par Teams » : Teams s'ouvre sur la conversation avec l'élève,
+  avec un message prêt contenant son lien de questionnaire.
+  Nécessite l'e-mail Teams de l'élève (fiche élève > Modifier) et le tien (Réglages).
+- L'élève remplit le questionnaire sur son propre appareil, puis touche
+  « Envoyer à mon tuteur sur Teams » : son message contient un code TQ1.… avec ses réponses.
+- Tableau de bord > « Coller une réponse Teams » : colle le message, le questionnaire est rangé
+  dans la bonne fiche. Plusieurs messages à la fois possibles ; un doublon est refusé.
+- Rien n'est stocké sur l'appareil de l'élève ni sur un serveur : le contenu voyage
+  dans le lien (après le #) et dans le message Teams.
+
+Sauvegarde dans le cloud
+- « Sauvegarde cloud » ouvre le menu Partager de l'iPhone : choisir OneDrive ou
+  « Enregistrer dans Fichiers » > iCloud Drive.
+- Rappel sur le tableau de bord si la dernière sauvegarde date de plus de 7 jours.
+
+Cache PWA mis à jour en 2.0. Les données existantes sont conservées.
