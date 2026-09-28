@@ -1,0 +1,14 @@
+MISE A JOUR 2.2 — réponses en attente (28 septembre 2026)
+
+- Après « Envoyer par Teams », au retour dans l'app : « As-tu bien envoyé le questionnaire
+  à Alex dans Teams ? ». Si oui, l'élève passe en « réponse en attente ».
+- Carte élève : « ⏳ Réponse en attente depuis X j » — neutre les 2 premiers jours,
+  or à partir de 3 jours, orange à partir de 7.
+- Tableau de bord : « ⏳ 2 réponses en attente · Alex, Mia ».
+- Fiche élève : date d'envoi, boutons « Relancer » et « Annuler l'attente ».
+- L'attente disparaît d'elle-même dès qu'un questionnaire plus récent arrive
+  (collé depuis Teams ou rempli dans l'app).
+- Réglages > « Pastille sur l'icône » : le nombre de réponses en attente s'affiche sur
+  l'icône de l'app (iPhone : app installée sur l'écran d'accueil, iOS 16.4 ou plus récent,
+  notifications autorisées).
+- Cache PWA mis à jour en 2.2.
