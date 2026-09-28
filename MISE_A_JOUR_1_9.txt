@@ -1,0 +1,29 @@
+MISE A JOUR 1.9 — charte Beau Soleil, mode élève verrouillé (28 septembre 2026)
+
+Mode élève verrouillé
+- Un code à 4 chiffres, choisi dans Réglages, est demandé pour quitter le questionnaire élève.
+- Le verrou tient même si l'élève ferme et rouvre l'application.
+- En cas d'oubli : bouton « Code oublié ? » et code de secours à 8 chiffres, affiché dans Réglages.
+- Sans code défini, le questionnaire élève ne se lance pas : l'app ouvre Réglages.
+
+Copies de sécurité
+- Réglages > Sécurité des données liste les copies locales (date, nombre d'élèves et de questionnaires).
+- Bouton « Restaurer » : les données actuelles sont d'abord gardées comme nouvelle copie.
+
+État d'esprit des élèves
+- Le dernier état d'esprit reste affiché tant qu'un nouveau questionnaire n'a pas été rempli,
+  avec son ancienneté (« il y a 9 j »).
+- À partir de 7 jours : alerte « Questionnaire à refaire ».
+- À partir de 14 jours : « Urgent · pas de questionnaire depuis X j ».
+
+Charte Beau Soleil 2025
+- Palette officielle (valeurs des SVG, pas celles du PDF) : navy, mid blue, bright blue ;
+  gold et burnt orange en accents seulement.
+- États : bleu = tout va bien, or = à regarder, burnt orange = prioritaire.
+- Titres en SangBleu OG Sans sans faux gras, texte en Calibri
+  (sur iPhone, repli sur Helvetica Neue et la police système).
+- Blason officiel net et logo horizontal blanc sur le bandeau navy.
+- index.html passe de 630 Ko à 200 Ko (le logo n'est plus intégré en base64).
+- Cache PWA mis à jour en 1.9.
+
+Les données existantes utilisent toujours la même clé locale et sont conservées.
