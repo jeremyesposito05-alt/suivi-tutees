@@ -1,0 +1,16 @@
+MISE A JOUR 1.8.4 — corrections de bugs (28 septembre 2026)
+
+- Les actions issues d'un 1/1 peuvent de nouveau être modifiées et clôturées depuis « Toutes les actions ».
+  Avant, elles restaient bloquées dès qu'une autre action était ouverte.
+- « Copier le rapport » et « Partager » reprennent le questionnaire choisi dans la vue Entretien,
+  et non plus toujours le dernier.
+- Le retour par glissement ne se déclenche plus quand on fait défiler un tableau horizontalement.
+- L'import d'une sauvegarde demande confirmation et garde d'abord une copie de sécurité locale.
+- Le chargement de la démo garde d'abord une copie de sécurité des vraies données.
+- Si le stockage de l'appareil est plein, un message d'alerte s'affiche au lieu d'une perte silencieuse.
+- Des données locales illisibles sont mises de côté au lieu d'être écrasées.
+- « Dernier commentaire » n'affiche plus les rewards / colles / sanctions en double.
+- Numéro de version harmonisé : 1.8.4 partout (l'écran Réglages affichait encore 1.6).
+- Cache PWA mis à jour en 1.8.4.
+
+Les données existantes utilisent toujours la même clé locale et sont conservées.
