@@ -1,0 +1,12 @@
+MISE A JOUR 2.4 — avis des utilisateurs (13 octobre 2026)
+
+- Nouveau lien « 💬 Donner un avis sur l'app » en bas de chaque écran, et carte dédiée dans Réglages.
+- Type d'avis : problème / bug, idée d'amélioration, question, autre.
+- Envoi à M. Esposito par Teams (conversation pré-remplie) ou par e-mail (message pré-rempli),
+  l'utilisateur relit puis envoie lui-même.
+- Le message indique le nom du tuteur et, si la case est cochée, la version de l'app et l'appareil.
+  Aucune donnée d'élève n'est jamais jointe.
+- Aucune donnée existante n'est modifiée : la fonction ne fait que lire.
+- Version précédente sauvegardée : étiquette git sauvegarde-v2.3 et copie dans
+  Claude code\_sauvegardes\suivi-tutees\V2.3\.
+- Cache PWA mis à jour en 2.4.
