@@ -1,0 +1,16 @@
+MISE A JOUR 2.5 — dossier complet imprimable (13 octobre 2026)
+
+- Fiche élève > « ••• » > « 📄 Dossier complet » : tout ce qui concerne l'élève dans un document
+  aux couleurs Beau Soleil :
+  profil, matières et activités des 3 terms ; note du tuteur ; graphique d'évolution
+  (bien-être, stress, fatigue) ; chaque questionnaire en détail ; tous les 1/1 ;
+  actions en cours et terminées ; rewards, colles et sanctions ; fil des informations.
+- Réglages > Gestion des tutees > « 📄 Dossiers de tous les élèves » : une page de synthèse
+  (état d'esprit, dernier questionnaire, statut, actions) puis un dossier par élève,
+  chacun sur une nouvelle page.
+- Bouton « Imprimer / PDF » : sur iPhone, Partager > Imprimer ou Enregistrer dans Fichiers.
+- Mention « Confidentiel — usage du tuteur » en tête de chaque élève et en pied de document.
+- Lecture seule : aucune donnée n'est modifiée.
+- Version précédente sauvegardée : étiquette sauvegarde-v2.4 et copie dans
+  Claude code\_sauvegardes\suivi-tutees\V2.4\.
+- Cache PWA mis à jour en 2.5.
